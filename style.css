@@ -297,6 +297,7 @@ header input:checked ~ .menu-item {
     font-family: "Gill Sans", sans-serif;
     margin: 15px 0;
     font-weight: 100;
+    line-height: 2;
 } 
 .issue-item-img{
     position:relative;
