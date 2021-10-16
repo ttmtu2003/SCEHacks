@@ -1,7 +1,7 @@
 :root {
-  --color1: #79120f;
-  --color2: #191f3a;
-  --color4: #c21212;
+  --color1: #d6e2e4;
+  --color2: #000000;
+  --color4: #ccebf0;
   --box: #2c3766;
   --color3: #ffffff;
   --overview-color: #f5e392;
@@ -31,6 +31,9 @@ header {
   position: relative;
   display: flex;
   text-align: center;
+  text-shadow: -1px 1px 5px #000, 1px 1px 5px #000, 1px -1px 5px #000,
+    -1px 1px 5px #000;
+
   justify-content: center;
   align-items: center;
 }
@@ -136,43 +139,43 @@ header input:checked ~ .menu-item {
   font-size: 50px;
   color: var(--color4);
   margin-bottom: 20px;
-  font-family: 'Archivo Black', sans-serif;
+  font-family: "Archivo Black", sans-serif;
   text-transform: uppercase;
   padding: 45px 0;
 }
 
 /*contact button*/
 .header-text a {
-    padding: 15px 40px;
-    background: var(--overview-color);
-    color: #000;
-    border-radius: 50px;
-    font-size: 25px;
-    animation: headerAnimation;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-    transition: 0.3s;
-    font-family:"Archivo Black", sans-serif;
+  padding: 15px 40px;
+  background: var(--overview-color);
+  color: rgb(255, 255, 255);
+  border-radius: 50px;
+  font-size: 25px;
+  animation: headerAnimation;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  transition: 0.3s;
+  font-family: "Archivo Black", sans-serif;
 }
 .header-text a:hover {
-    background: transparent;
-    color: var(--overview-color);
-    border: 2px solid var(--overview-color);
+  background: transparent;
+  color: var(--overview-color);
+  border: 2px solid var(--overview-color);
 }
 @keyframes headerAnimation {
-    0% {
-        opacity: 0.4;
-    }
-    50% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0.4;
-    }
+  0% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.4;
+  }
 }
 
-.justify-content{
-    justify-content: space-between;
+.justify-content {
+  justify-content: space-between;
 }
 .container {
   max-width: 1200px;
@@ -184,20 +187,22 @@ header input:checked ~ .menu-item {
 }
 
 /*actual overview*/
-.overview{
-    background-color: var(--color1);
+.overview {
+  background-color: var(--color1);
 }
-.section-padding{
-    padding: 80px 0;
+.section-padding {
+  padding: 80px 0;
 }
 .section-title {
   width: 100%;
   text-align: center;
+  text-shadow: -1px 1px 3px rgb(255, 255, 255), 1px 1px 3px rgb(255, 255, 255),
+    1px -1px 3px rgb(255, 255, 255), -1px 1px 3px rgb(255, 255, 255);
   padding: 6px 0;
 }
 .section-title h2 {
   font-size: 45px;
-  color:#010b46;
+  color: #010b46;
 }
 
 .section-title p {
@@ -215,53 +220,51 @@ header input:checked ~ .menu-item {
   color: #000;
   font-weight: 400;
 }
-.overview .overview-item p{
-    font-size: 18px;
-    margin: 15px 0;
+.overview .overview-item p {
+  font-size: 18px;
+  margin: 15px 0;
 }
-
-
 
 /* overview */
 .crises {
-    background-color: var(--overview-color);
+  background-color: #c0e4e4;
 }
-.crises-title{
-    width: 100%;
-    text-align: center;
+.crises-title {
+  width: 100%;
+  text-align: center;
 }
-.crises-title .crises-button{
-    background-color: transparent;
-    margin: 10px 12px;
-    border: none;
-    font-size: 20px;
-    color: var(--color2);
-    cursor: pointer;
+.crises-title .crises-button {
+  background-color: transparent;
+  margin: 10px 12px;
+  border: none;
+  font-size: 20px;
+  color: var(--color2);
+  cursor: pointer;
 }
 
 .crises .crises-item {
-    width: 100%;
-    padding: 10px 0;
-    text-align: center;
+  width: 100%;
+  padding: 10px 0;
+  text-align: center;
 }
 
-.crises .crises-item h2{
-    color: var(--color2);
-    font-size: 35px;
-    text-align: center;
-    padding: 6px 0;
+.crises .crises-item h2 {
+  color: var(--color2);
+  font-size: 35px;
+  text-align: center;
+  padding: 6px 0;
 }
-.crises .crises-item p{
-    font-size: 18px;
-    margin: 15px 0;
-    text-align: center;
+.crises .crises-item p {
+  font-size: 18px;
+  margin: 15px 0;
+  text-align: center;
 }
 
-.crises-title .crises-button.active{
-    color: var(--color4);
+.crises-title .crises-button.active {
+  color: #189baf;
 }
-.crises-title .crises-button:hover{
-    color: var(--color4);
+.crises-title .crises-button:hover {
+  color: #5fd6e9d8;
 }
 
 .issue-item{
@@ -283,21 +286,39 @@ header input:checked ~ .menu-item {
 }
 .issue-item-content h2{
     color: var(--color2);
-    font-size: 35px;
+    font-size: 30px;
 }
 .issue-description p{
     font-size: 18px;
+    font-family: "Gill Sans", sans-serif;
     margin: 15px 0;
+    font-weight: 100;
 } 
 .issue-item-img{
     position:relative;
     padding: 0px 30px 0px 0px;
 }
 
-.menu-item-content{
+.menu-item-content {
     display: none;
-}
+  }
 .menu-item-content.active {
     display: flex;
     flex-wrap: wrap;
+}
+  
+.actionsYouTake {
+    background-color: #9cd3d3;
+}
+  
+.actionsGovTakes {
+    background-color: #74a3ac;
+}
+
+.orgs {
+  background-color: #5599a7;
+}
+
+.ref {
+  background-color: #2d6570;
 }
