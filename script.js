@@ -1,4 +1,4 @@
-//navigation
+//drop down nav
 function myFunction() {
     var x = document.getElementById("nav");
     if (x.className === "menu-item") {
