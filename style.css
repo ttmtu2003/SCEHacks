@@ -244,7 +244,7 @@ header input:checked ~ .menu-item {
 
 .crises .crises-item {
   width: 100%;
-  padding: 10px 0;
+  padding: 10px 10px;
   text-align: center;
 }
 
@@ -256,7 +256,7 @@ header input:checked ~ .menu-item {
 }
 .crises .crises-item p {
   font-size: 18px;
-  margin: 15px 0;
+  margin: 15px 10px;
   text-align: center;
 }
 
