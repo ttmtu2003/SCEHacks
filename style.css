@@ -1,6 +1,6 @@
 :root {
   --color1: #ccebf0;
-  --color2: #191f3a;
+  --color2: #ffffff;
   --color4: #ccebf0;
   --box: #2c3766;
   --color3: #ffffff;
@@ -31,7 +31,9 @@ header {
   position: relative;
   display: flex;
   text-align: center;
-  -webkit-text-stroke: 1.5px rgb(0, 0, 0);
+  text-shadow: -1px 1px 5px #000, 1px 1px 5px #000, 1px -1px 5px #000,
+    -1px 1px 5px #000;
+
   justify-content: center;
   align-items: center;
 }
@@ -146,7 +148,7 @@ header input:checked ~ .menu-item {
 .header-text a {
   padding: 15px 40px;
   background: var(--overview-color);
-  color: #000;
+  color: rgb(255, 255, 255);
   border-radius: 50px;
   font-size: 25px;
   animation: headerAnimation;
