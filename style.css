@@ -297,14 +297,16 @@ header input:checked ~ .menu-item {
 }
 .issue-description p {
   font-size: 18px;
-  font-family: "Raleway", sans-serif;
+  font-family: "Gill Sans", sans-serif;
   margin: 15px 0;
   font-weight: 100;
+  line-height: 2;
 }
 .issue-item-img {
   position: relative;
   padding: 0px 30px 0px 0px;
 }
+
 
 .menu-item-content {
   display: none;
