@@ -297,7 +297,7 @@ header input:checked ~ .menu-item {
 }
 .issue-description p {
   font-size: 18px;
-  font-family: "Gill Sans", sans-serif;
+  font-family: "Raleway", sans-serif;
   margin: 15px 0;
   font-weight: 100;
   line-height: 2;
@@ -330,16 +330,19 @@ header input:checked ~ .menu-item {
   background-size: cover;
 }
 
-.orgs-title {
+.orgs-title h2 {
   background-color: transparent;
-  margin: 25px 20px 10px;
-  font-size: 20px;
+  margin: 25px 20px;
+  font-size: 35px;
+  text-align: center;
 }
 
-.orgs-description {
+.orgs-description p {
   background-color: transparent;
-  margin: 50px 40px;
+  margin: 10px 20px;
   font-size: 20px;
+  font-family: "Raleway", sans-serif;
+  text-align: center;
 }
 
 .ref {
