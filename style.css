@@ -210,6 +210,7 @@ header input:checked ~ .menu-item {
   font-size: 20px;
   color: #010b46;
   font-family: "Gill Sans", sans-serif;
+  font-weight: 100;
   line-height: 50px;
   padding: 20px 0;
   margin: 5px 5px;
