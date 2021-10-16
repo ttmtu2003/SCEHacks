@@ -209,8 +209,8 @@ header input:checked ~ .menu-item {
     font-size: 20px;
     color:var(--overview-color);
     line-height: 50px;
-    padding: 20px 0;
-    margin: 10px 10px;
+    padding: 20px 0 ;
+    margin: 10px 10px -30px;
   }
 
 .section-title h2::before {
@@ -244,7 +244,7 @@ header input:checked ~ .menu-item {
 
 .crises .crises-item {
   width: 100%;
-  padding: 10px 0;
+  padding: 10px;
   text-align: center;
 }
 
@@ -253,6 +253,7 @@ header input:checked ~ .menu-item {
   font-size: 35px;
   text-align: center;
   padding: 6px 0;
+  margin: -80px 10px;
 }
 .crises .crises-item p {
   font-size: 18px;
