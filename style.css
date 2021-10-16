@@ -1,0 +1,35 @@
+:root {
+    --color1: #fac411;
+    --color2: #191F3A;
+    --box: #2c3766;
+    --color3: #ffffff;
+    --title1-color: #910909; 
+    --title2-color: #10722d; 
+    --title3-color: #085797; 
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Baloo Chettan 2', cursive; 
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+header {
+    width: 100vw;
+    height: 100vh;
+    background: url("image/header-background\ copy.jpg");
+    background-position: 65% 35%;
+    background-size: 1300px 1300px;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
