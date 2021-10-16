@@ -136,6 +136,7 @@ header input:checked ~ .menu-item {
   font-size: 50px;
   color: var(--color4);
   margin-bottom: 20px;
+  text-transform: uppercase;
 }
 
 /*style sections*/
@@ -146,7 +147,6 @@ header input:checked ~ .menu-item {
 }
 .section-title h2 {
   font-size: 35px;
-  text-transform: uppercase;
 }
 .section-title h2::before {
   content: attr(data-title);
