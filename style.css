@@ -252,10 +252,10 @@ header input:checked ~ .menu-item {
 }
 
 .crises-title .crises-button.active {
-  color: var(--color4);
+  color: #189baf;
 }
 .crises-title .crises-button:hover {
-  color: var(--color4);
+  color: #5fd6e9d8;
 }
 
 .issue-item {
