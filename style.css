@@ -307,26 +307,6 @@ header input:checked ~ .menu-item {
   padding: 0px 30px 0px 0px;
 }
 
-.issue-item-img > img {
-  border-radius: 10px;
-  display: table-cell;
-  max-height: 500px;
-  max-width: 500px;
-}
-.issue-item-content h2 {
-  color: var(--color2);
-  font-size: 30px;
-}
-.issue-description p {
-  font-size: 18px;
-  font-family: "Raleway", sans-serif;
-  margin: 15px 0;
-  font-weight: 100;
-}
-.issue-item-img {
-  position: relative;
-  padding: 0px 30px 0px 0px;
-}
 
 .menu-item-content {
   display: none;
@@ -336,12 +316,12 @@ header input:checked ~ .menu-item {
   flex-wrap: wrap;
 }
 
-.actionsYouTake {
+.actionsGovTakes {
   background-color: #9cd3d3;
   background-size: cover;
 }
 
-.actionsGovTakes {
+.actionsYouTake {
   background-color: #74a3ac;
   background-size: cover;
 }
