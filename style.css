@@ -274,6 +274,8 @@ header input:checked ~ .menu-item {
 .issue-description p {
   font-size: 18px;
   margin: 15px 0;
+  font-family: "Gill Sans", sans-serif;
+  font-weight: 100;
 }
 .issue-item-img {
   position: relative;
