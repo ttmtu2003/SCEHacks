@@ -209,8 +209,8 @@ header input:checked ~ .menu-item {
     font-size: 20px;
     color:var(--overview-color);
     line-height: 50px;
-    padding: 20px 0 ;
-    margin: 10px 10px -30px;
+    padding: 20px 0;
+    margin: 10px 10px;
   }
 
 .section-title h2::before {
@@ -244,7 +244,7 @@ header input:checked ~ .menu-item {
 
 .crises .crises-item {
   width: 100%;
-  padding: 10px;
+  padding: 10px 0;
   text-align: center;
 }
 
@@ -253,7 +253,7 @@ header input:checked ~ .menu-item {
   font-size: 35px;
   text-align: center;
   padding: 6px 0;
-  margin: -80px 10px;
+  margin: -40px 0;
 }
 .crises .crises-item p {
   font-size: 18px;
@@ -306,7 +306,7 @@ header input:checked ~ .menu-item {
 .menu-item-content.active {
     display: flex;
     flex-wrap: wrap;
-}
+  }
   
 .actionsYouTake {
     background-color: #9cd3d3;
