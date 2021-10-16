@@ -1,10 +1,10 @@
 :root {
-  --color1: #fccd35;
+  --color1: #ffe240;
   --color2: #191f3a;
-  --color4: #ffd416;
+  --color4: #c21212;
   --box: #2c3766;
   --color3: #ffffff;
-  --title1-color: #910909;
+  --overview-color: #f5e392;
   --title2-color: #10722d;
   --title3-color: #085797;
 }
@@ -136,7 +136,39 @@ header input:checked ~ .menu-item {
   font-size: 50px;
   color: var(--color4);
   margin-bottom: 20px;
+  font-family: 'Archivo Black', sans-serif;
   text-transform: uppercase;
+  padding: 45px 0;
+}
+
+/*contact button*/
+.header-text a {
+    padding: 15px 40px;
+    background: var(--overview-color);
+    color: #000;
+    border-radius: 50px;
+    font-size: 25px;
+    animation: headerAnimation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    transition: 0.3s;
+    font-family:"Archivo Black", sans-serif;
+}
+.header-text a:hover {
+    background: transparent;
+    color: var(--overview-color);
+    border: 2px solid var(--overview-color);
+}
+@keyframes headerAnimation {
+    0% {
+        opacity: 0.4;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.4;
+    }
 }
 
 /*style sections*/
@@ -149,14 +181,14 @@ header input:checked ~ .menu-item {
   padding: 6px 0;
 }
 .section-title h2 {
-  font-size: 35px;
+  font-size: 45px;
+  color:#c21212;
 }
 .section-title h2::before {
   content: attr(data-title);
   display: block;
   font-size: 24px;
-  color: var(--color1);
-  font-family: var(--cursive-font);
+  color: #000;
   font-weight: 400;
 }
 
@@ -167,4 +199,45 @@ header input:checked ~ .menu-item {
 .row {
   display: flex;
   flex-wrap: wrap;
+}
+
+/* overview */
+.overview {
+    background-color: var(--overview-color);
+}
+.overview-title{
+    width: 100%;
+    text-align: center;
+}
+.overview-title .overview-button{
+    background-color: transparent;
+    margin: 10px 12px;
+    border: none;
+    font-size: 20px;
+    color: var(--color2);
+    cursor: pointer;
+}
+
+.overview .overview-item {
+    width: 100%;
+    padding: 10px 0;
+}
+
+.overview .overview-item h2{
+    color: var(--color2);
+    font-size: 35px;
+    text-align: center;
+    padding: 6px 0;
+}
+.overview .overview-item p{
+    font-size: 18px;
+    margin: 15px 0;
+    text-align: center;
+}
+
+.overview-title .overview-button.active{
+    color: var(--color4);
+}
+.overview-title .overview-button:hover{
+    color: var(--color4);
 }
