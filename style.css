@@ -216,7 +216,7 @@ header input:checked ~ .menu-item {
 
 /* overview */
 .crises {
-  background-color: #74a3ac;
+  background-color: #c0e4e4;
 }
 .crises-title {
   width: 100%;
@@ -283,4 +283,20 @@ header input:checked ~ .menu-item {
 .menu-item-content.active {
   display: flex;
   flex-wrap: wrap;
+}
+
+.actionsYouTake {
+  background-color: #9cd3d3;
+}
+
+.actionsGovTakes {
+  background-color: #74a3ac;
+}
+
+.orgs {
+  background-color: #5599a7;
+}
+
+.ref {
+  background-color: #2d6570;
 }
