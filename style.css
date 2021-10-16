@@ -243,7 +243,7 @@ header input:checked ~ .menu-item {
   color: var(--color2);
   font-size: 35px;
   text-align: center;
-  padding: 6px 0;
+  padding: 8px 0;
 }
 .crises .crises-item p {
   font-size: 18px;
