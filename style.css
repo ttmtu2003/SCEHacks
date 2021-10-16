@@ -199,6 +199,15 @@ header input:checked ~ .menu-item {
   font-size: 45px;
   color:#010b46;
 }
+
+.section-title p {
+    font-size: 20px;
+    color:var(--overview-color);
+    line-height: 50px;
+    padding: 20px 0;
+    margin: 10px 10px;
+  }
+
 .section-title h2::before {
   content: attr(data-title);
   display: block;
@@ -257,14 +266,22 @@ header input:checked ~ .menu-item {
 
 .issue-item{
     width:100%;
-    padding: 15px;
+    display: table;
 }
 
-.issue-item img{
-    width: 100%;
-    border-radius: 10px;
+.issue-item-content{
+    vertical-align: middle;
+    padding: 0px 50px 0px 50px;
+    display: table-cell;
 }
-.issue-item h2{
+
+.issue-item-img > img{
+    border-radius: 10px;
+    display: table-cell;
+    max-height: 500px;
+    max-width: 500px;
+}
+.issue-item-content h2{
     color: var(--color2);
     font-size: 35px;
 }
@@ -274,6 +291,7 @@ header input:checked ~ .menu-item {
 } 
 .issue-item-img{
     position:relative;
+    padding: 0px 30px 0px 0px;
 }
 
 .menu-item-content{
