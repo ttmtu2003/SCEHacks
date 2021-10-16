@@ -1,7 +1,7 @@
 :root {
-  --color1: #79120f;
+  --color1: #ccebf0;
   --color2: #191f3a;
-  --color4: #c21212;
+  --color4: #ccebf0;
   --box: #2c3766;
   --color3: #ffffff;
   --overview-color: #f5e392;
@@ -31,6 +31,7 @@ header {
   position: relative;
   display: flex;
   text-align: center;
+  -webkit-text-stroke: 1.5px rgb(0, 0, 0);
   justify-content: center;
   align-items: center;
 }
@@ -136,43 +137,43 @@ header input:checked ~ .menu-item {
   font-size: 50px;
   color: var(--color4);
   margin-bottom: 20px;
-  font-family: 'Archivo Black', sans-serif;
+  font-family: "Archivo Black", sans-serif;
   text-transform: uppercase;
   padding: 45px 0;
 }
 
 /*contact button*/
 .header-text a {
-    padding: 15px 40px;
-    background: var(--overview-color);
-    color: #000;
-    border-radius: 50px;
-    font-size: 25px;
-    animation: headerAnimation;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-    transition: 0.3s;
-    font-family:"Archivo Black", sans-serif;
+  padding: 15px 40px;
+  background: var(--overview-color);
+  color: #000;
+  border-radius: 50px;
+  font-size: 25px;
+  animation: headerAnimation;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  transition: 0.3s;
+  font-family: "Archivo Black", sans-serif;
 }
 .header-text a:hover {
-    background: transparent;
-    color: var(--overview-color);
-    border: 2px solid var(--overview-color);
+  background: transparent;
+  color: var(--overview-color);
+  border: 2px solid var(--overview-color);
 }
 @keyframes headerAnimation {
-    0% {
-        opacity: 0.4;
-    }
-    50% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0.4;
-    }
+  0% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.4;
+  }
 }
 
-.justify-content{
-    justify-content: space-between;
+.justify-content {
+  justify-content: space-between;
 }
 .container {
   max-width: 1200px;
@@ -184,11 +185,11 @@ header input:checked ~ .menu-item {
 }
 
 /*actual overview*/
-.overview{
-    background-color: var(--color1);
+.overview {
+  background-color: var(--color1);
 }
-.section-padding{
-    padding: 80px 0;
+.section-padding {
+  padding: 80px 0;
 }
 .section-title {
   width: 100%;
@@ -197,7 +198,7 @@ header input:checked ~ .menu-item {
 }
 .section-title h2 {
   font-size: 45px;
-  color:#010b46;
+  color: #010b46;
 }
 .section-title h2::before {
   content: attr(data-title);
@@ -206,80 +207,78 @@ header input:checked ~ .menu-item {
   color: #000;
   font-weight: 400;
 }
-.overview .overview-item p{
-    font-size: 18px;
-    margin: 15px 0;
+.overview .overview-item p {
+  font-size: 18px;
+  margin: 15px 0;
 }
-
-
 
 /* overview */
 .crises {
-    background-color: var(--overview-color);
+  background-color: var(--overview-color);
 }
-.crises-title{
-    width: 100%;
-    text-align: center;
+.crises-title {
+  width: 100%;
+  text-align: center;
 }
-.crises-title .crises-button{
-    background-color: transparent;
-    margin: 10px 12px;
-    border: none;
-    font-size: 20px;
-    color: var(--color2);
-    cursor: pointer;
+.crises-title .crises-button {
+  background-color: transparent;
+  margin: 10px 12px;
+  border: none;
+  font-size: 20px;
+  color: var(--color2);
+  cursor: pointer;
 }
 
 .crises .crises-item {
-    width: 100%;
-    padding: 10px 0;
-    text-align: center;
+  width: 100%;
+  padding: 10px 0;
+  text-align: center;
 }
 
-.crises .crises-item h2{
-    color: var(--color2);
-    font-size: 35px;
-    text-align: center;
-    padding: 6px 0;
+.crises .crises-item h2 {
+  color: var(--color2);
+  font-size: 35px;
+  text-align: center;
+  padding: 6px 0;
 }
-.crises .crises-item p{
-    font-size: 18px;
-    margin: 15px 0;
-    text-align: center;
-}
-
-.crises-title .crises-button.active{
-    color: var(--color4);
-}
-.crises-title .crises-button:hover{
-    color: var(--color4);
+.crises .crises-item p {
+  font-size: 18px;
+  margin: 15px 0;
+  text-align: center;
 }
 
-.issue-item{
-    width:100%;
-    padding: 15px;
+.crises-title .crises-button.active {
+  color: var(--color4);
+}
+.crises-title .crises-button:hover {
+  color: var(--color4);
 }
 
-.issue-item img{
-    width: 100%;
-    border-radius: 10px;
-}
-.issue-item h2{
-    color: var(--color2);
-    font-size: 35px;
-}
-.issue-description p{
-    font-size: 18px;
-    margin: 15px 0;
-} 
-.issue-item-img{
-    position:relative;
+.issue-item {
+  width: 100%;
+  padding: 15px;
 }
 
-.menu-item-content{
-    display: none;
+.issue-item img {
+  width: 100%;
+  border-radius: 10px;
+}
+.issue-item h2 {
+  color: var(--color2);
+  font-size: 35px;
+}
+.issue-description p {
+  font-size: 18px;
+  margin: 15px 0;
+}
+.issue-item-img {
+  position: relative;
+}
+
+.menu-item-content {
+  display: none;
 }
 .menu-item-content.active {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
