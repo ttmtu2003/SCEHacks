@@ -351,6 +351,18 @@ header input:checked ~ .menu-item {
   background-size: cover;
 }
 
+.orgs-title {
+  background-color: transparent;
+  margin: 25px 20px 10px;
+  font-size: 20px;
+}
+
+.orgs-description {
+  background-color: transparent;
+  margin: 50px 40px;
+  font-size: 20px;
+}
+
 .ref {
   background-color: #2d6570;
   background-size: cover;
