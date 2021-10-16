@@ -1,5 +1,5 @@
 :root {
-  --color1: #ffe240;
+  --color1: #79120f;
   --color2: #191f3a;
   --color4: #c21212;
   --box: #2c3766;
@@ -83,7 +83,7 @@ header input:checked ~ .menu-item {
 .menu-line {
   height: 4px;
   width: 100%;
-  background: var(--color1);
+  background: #ffd414;
   position: relative;
 }
 .menu-line::before {
@@ -92,7 +92,7 @@ header input:checked ~ .menu-item {
   width: 100%;
   height: 4px;
   position: absolute;
-  background: var(--color1);
+  background: #ffd414;
   top: -14px;
 }
 .menu-line::after {
@@ -101,7 +101,7 @@ header input:checked ~ .menu-item {
   width: 100%;
   height: 4px;
   position: absolute;
-  background: var(--color1);
+  background: #ffd414;
   top: 14px;
 }
 
@@ -125,7 +125,7 @@ header input:checked ~ .menu-item {
   line-height: 40px;
 }
 .menu-item li a {
-  color: var(--color1);
+  color: #ffd414;
 }
 
 /*header text*/
@@ -171,7 +171,22 @@ header input:checked ~ .menu-item {
     }
 }
 
-/*style sections*/
+.justify-content{
+    justify-content: space-between;
+}
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/*actual overview*/
+.overview{
+    background-color: var(--color1);
+}
 .section-padding{
     padding: 80px 0;
 }
@@ -182,7 +197,7 @@ header input:checked ~ .menu-item {
 }
 .section-title h2 {
   font-size: 45px;
-  color:#c21212;
+  color:#010b46;
 }
 .section-title h2::before {
   content: attr(data-title);
@@ -191,25 +206,22 @@ header input:checked ~ .menu-item {
   color: #000;
   font-weight: 400;
 }
+.overview .overview-item p{
+    font-size: 18px;
+    margin: 15px 0;
+}
 
-.container {
-  max-width: 1200px;
-  margin: auto;
-}
-.row {
-  display: flex;
-  flex-wrap: wrap;
-}
+
 
 /* overview */
-.overview {
+.crises {
     background-color: var(--overview-color);
 }
-.overview-title{
+.crises-title{
     width: 100%;
     text-align: center;
 }
-.overview-title .overview-button{
+.crises-title .crises-button{
     background-color: transparent;
     margin: 10px 12px;
     border: none;
@@ -218,26 +230,56 @@ header input:checked ~ .menu-item {
     cursor: pointer;
 }
 
-.overview .overview-item {
+.crises .crises-item {
     width: 100%;
     padding: 10px 0;
+    text-align: center;
 }
 
-.overview .overview-item h2{
+.crises .crises-item h2{
     color: var(--color2);
     font-size: 35px;
     text-align: center;
     padding: 6px 0;
 }
-.overview .overview-item p{
+.crises .crises-item p{
     font-size: 18px;
     margin: 15px 0;
     text-align: center;
 }
 
-.overview-title .overview-button.active{
+.crises-title .crises-button.active{
     color: var(--color4);
 }
-.overview-title .overview-button:hover{
+.crises-title .crises-button:hover{
     color: var(--color4);
+}
+
+.issue-item{
+    width:100%;
+    padding: 15px;
+}
+
+.issue-item img{
+    width: 100%;
+    border-radius: 10px;
+}
+.issue-item h2{
+    color: var(--color2);
+    font-size: 35px;
+}
+.issue-description p{
+    font-size: 18px;
+    margin: 15px 0;
+} 
+.issue-item-img{
+    position:relative;
+}
+
+.menu-item-content{
+    display: none;
+}
+.menu-item-content.active {
+    display: flex;
+    flex-wrap: wrap;
 }
