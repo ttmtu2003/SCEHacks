@@ -139,7 +139,7 @@ header input:checked ~ .menu-item {
   font-size: 50px;
   color: var(--color4);
   margin-bottom: 20px;
-  font-family: "Archivo Black", sans-serif;
+  font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
   padding: 45px 0;
 }
@@ -207,14 +207,14 @@ header input:checked ~ .menu-item {
 }
 
 .section-title p {
-    font-size: 20px;
-    color: #010b46;
-    font-family: "Gill Sans", sans-serif;
-    font-weight: 100;
-    line-height: 50px;
-    padding: 20px 0;
-    margin: 5px 5px -50px;
-  }
+  font-size: 20px;
+  color: #010b46;
+  font-family: "Raleway", sans-serif;
+  font-weight: 100;
+  line-height: 50px;
+  padding: 20px 0;
+  margin: 5px 5px -50px;
+}
 
 .section-title h2::before {
   content: attr(data-title);
@@ -271,52 +271,52 @@ header input:checked ~ .menu-item {
   color: #5fd6e9d8;
 }
 
-.issue-item{
-    width:100%;
-    display: table;
+.issue-item {
+  width: 100%;
+  display: table;
 }
 
-.issue-item-content{
-    vertical-align: middle;
-    padding: 0px 50px 0px 50px;
-    display: table-cell;
+.issue-item-content {
+  vertical-align: middle;
+  padding: 0px 50px 0px 50px;
+  display: table-cell;
 }
 
-.issue-item-img > img{
-    border-radius: 10px;
-    display: table-cell;
-    max-height: 500px;
-    max-width: 500px;
+.issue-item-img > img {
+  border-radius: 10px;
+  display: table-cell;
+  max-height: 500px;
+  max-width: 500px;
 }
-.issue-item-content h2{
-    color: var(--color2);
-    font-size: 30px;
+.issue-item-content h2 {
+  color: var(--color2);
+  font-size: 30px;
 }
-.issue-description p{
-    font-size: 18px;
-    font-family: "Gill Sans", sans-serif;
-    margin: 15px 0;
-    font-weight: 100;
-} 
-.issue-item-img{
-    position:relative;
-    padding: 0px 30px 0px 0px;
+.issue-description p {
+  font-size: 18px;
+  font-family: "Raleway", sans-serif;
+  margin: 15px 0;
+  font-weight: 100;
+}
+.issue-item-img {
+  position: relative;
+  padding: 0px 30px 0px 0px;
 }
 
 .menu-item-content {
-    display: none;
-  }
-.menu-item-content.active {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  
-.actionsYouTake {
-    background-color: #9cd3d3;
+  display: none;
 }
-  
+.menu-item-content.active {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.actionsYouTake {
+  background-color: #9cd3d3;
+}
+
 .actionsGovTakes {
-    background-color: #74a3ac;
+  background-color: #74a3ac;
 }
 
 .orgs {
