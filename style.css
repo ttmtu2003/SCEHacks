@@ -409,6 +409,15 @@ header input:checked ~ .menu-item {
   background-size: cover;
 }
 
+.ref-description p{
+    background-color: transparent;
+    margin: 10px 10px 0 10px;
+    font-size: 20px;
+    font-family: "Raleway", sans-serif;
+    text-align:center;
+    line-height: 50px;
+}
+
 /* Pop Up */
 *, *::after, *::before {
     box-sizing: border-box;
