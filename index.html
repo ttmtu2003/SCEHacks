@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsive.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato&family=Archivo+Black&family=Montserrat:wght@700&family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -196,10 +197,49 @@
             <div class="row">
                 <div class="section-title">
                     <h2 data-title="">How You Can Help</h2>
+                    <div class="help-description">
+                        <p>As an individual, there are ways that one can help with the housing crisis problem:
+                            Spreading awareness about the issue to the community.
+                            Signing petitions to revitalize neighborhoods, more construction of housing targeted to low-income families.
+                            Donating to or volunteering at housing foundations.
+                        </p>
+                        <p>
+                            See the list below for the links to affordable housing foundations that you can apply to volunteer or donate to: 
+                        </p>
+                    </div>
                 </div>
-
             </div>
         </div>
+
+        <!--Pop Up-->
+        <div class="popup-button">
+            <button data-list-target="#list" class="btn">Open List <i class="fa fa-arrow-right"></i></button>
+            <div class="list" id="list">
+            <div class="list-header">
+                <div class="title">List of Housing Foundations</div>
+                <button data-close-button class="close-button">&times;</button>
+            </div>
+            <div class="list-body">
+                <a href="https://hthf.org/">Hope through Housing</a>
+                <br>
+                <a href="https://www.mercyhousing.org/california/volunteer/">Mercy Housing</a>
+                <br>
+                <a href="https://www.habitatebsv.org/get-involved/individual-volunteer-opportunities">Habitat for Humanity</a>
+                <br>
+                <a href="https://www.ifhomeless.org/get-involved/volunteer/">Illumination Foundation</a>
+                <br>
+                <a href="https://nlihc.org/donate">National Low Income Housing Coalition</a>
+                <br>
+                <a href="https://rebuildingtogethersv.org/">Rebuilding Together Silicon Valley</a>
+                <br>
+                <a href="https://www.hifinfo.org/donate/">Housing Industry Foundation</a>
+
+            </div>
+            </div>
+            <div id="overlay"></div>
+        </div>
+        
+
     </section>
 
     <!--Organizations-->

@@ -24,7 +24,12 @@ a {
 header {
   width: 100vw;
   height: 100vh;
-  background: url("image/header-background.jpeg");
+  background-image: url("image/header-background.jpeg");
+  background: black;
+  overflow: hidden;
+  background: black;  /* fallback colour. Make sure this is just one solid colour. */
+  background: -webkit-linear-gradient(rgba(46, 70, 82, 0.8), rgba(46, 70, 82, 0.8)), url("image/header-background.jpeg");
+  background: linear-gradient(rgba(46, 70, 82, 0.8), rgba(46, 70, 82, 0.8)), url("image/header-background.jpeg");
   background-position: 65% 35%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -37,6 +42,7 @@ header {
   justify-content: center;
   align-items: center;
 }
+
 
 /*drop down nav*/
 header input {
@@ -315,10 +321,6 @@ header input:checked ~ .menu-item {
   flex-wrap: wrap;
 }
 
-.actionsGovTakes {
-  background-color: #9cd3d3;
-  background-size: cover;
-}
 
 .actionsGovTakes {
   background-color: #9cd3d3;
@@ -352,6 +354,16 @@ header input:checked ~ .menu-item {
   background-color: #74a3ac;
   background-size: cover;
 }
+
+.help-description p {
+    background-color: transparent;
+    margin: 15px 20px;
+    font-size: 20px;
+    font-family: "Raleway", sans-serif;
+    text-align: center;
+    line-height: 50px;
+    padding: 20px 0;
+  }
 
 .orgs {
   background-color: #5599a7;
@@ -396,3 +408,97 @@ header input:checked ~ .menu-item {
   background-color: #2d6570;
   background-size: cover;
 }
+
+/* Pop Up */
+*, *::after, *::before {
+    box-sizing: border-box;
+  }
+  
+  .list {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    border: 1px solid black;
+    border-radius: 10px;
+    z-index: 10;
+    background-color: white;
+    width: 500px;
+    max-width: 80%;
+  }
+  
+  .list.active {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  
+  .list-header {
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+  }
+  
+  .list-header .title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    /* margin: 0 107px; */
+    width: 100%;
+  }
+  
+  .list-header .close-button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+
+  .popup-button {
+    text-align: center;
+    position: relative;
+    padding: 50px 0px 0px 0px;
+  }
+
+  /* Style buttons */
+.btn {
+    background-color: rgb(255, 196, 35); /* Blue background */
+    border: none; /* Remove borders */
+    color: rgb(0, 0, 0); /* White text */
+    padding: 12px 16px; /* Some padding */
+    font-size: 16px; /* Set a font size */
+    cursor: pointer; /* Mouse pointer on hover */
+    border-radius: 5px;
+  }
+  
+  /* Darker background on mouse-over */
+  .btn:hover {
+    background-color: rgb(255, 166, 1);
+  }
+  
+  .list-body {
+    padding: 10px 15px;
+  }
+
+  .list-body a {
+      line-height: 2;
+  }
+  
+  #overlay {
+    position: fixed;
+    opacity: 0;
+    transition: 200ms ease-in-out;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5);
+    pointer-events: none;
+  }
+  
+  #overlay.active {
+    opacity: 1;
+    pointer-events: all;
+  }
