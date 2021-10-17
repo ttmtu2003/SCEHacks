@@ -330,11 +330,17 @@ header input:checked ~ .menu-item {
   background-size: cover;
 }
 
+.orgs-title {
+  width: 100%;
+  text-align: center;
+  padding: 6px 0;
+}
+
 .orgs-title h2 {
   background-color: transparent;
   margin: 25px 20px;
   font-size: 35px;
-  text-align: center;
+  color: #e4f0ff;
 }
 
 .orgs-description p {
