@@ -325,9 +325,9 @@ header input:checked ~ .menu-item {
   background-size: cover;
 }
 
-.gov-description {
+.gov-description p {
   background-color: transparent;
-  margin: 10px 20px;
+  margin: 15px 20px;
   font-size: 20px;
   font-family: "Raleway", sans-serif;
   text-align: center;
