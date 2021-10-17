@@ -27,7 +27,7 @@ header {
   background-image: url("image/header-background.jpeg");
   background: black;
   overflow: hidden;
-  background: black;  /* fallback colour. Make sure this is just one solid colour. */
+  background: black;  
   background: -webkit-linear-gradient(rgba(46, 70, 82, 0.8), rgba(46, 70, 82, 0.8)), url("image/header-background.jpeg");
   background: linear-gradient(rgba(46, 70, 82, 0.8), rgba(46, 70, 82, 0.8)), url("image/header-background.jpeg");
   background-position: 65% 35%;
@@ -357,12 +357,12 @@ header input:checked ~ .menu-item {
 
 .help-description p {
     background-color: transparent;
-    margin: 15px 20px;
+    margin: 0 20px 0;
     font-size: 20px;
     font-family: "Raleway", sans-serif;
     text-align: center;
     line-height: 50px;
-    padding: 20px 0;
+    padding: 0 0;
   }
 
 .orgs {
@@ -389,13 +389,13 @@ header input:checked ~ .menu-item {
   font-size: 20px;
   font-family: "Raleway", sans-serif;
   text-align: center;
+  line-height: 50px;
 }
 
 .orgs-item-img > img {
   border-radius: 10px;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 0 10px 270px;
   width: 50%;
 }
 
@@ -423,7 +423,7 @@ header input:checked ~ .menu-item {
     border: 1px solid black;
     border-radius: 10px;
     z-index: 10;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     width: 500px;
     max-width: 80%;
   }
