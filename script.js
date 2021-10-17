@@ -21,4 +21,6 @@ function myFunction() {
         menuItem.querySelector(".menu-item-content.active").classList.remove("active");
         menuItem.querySelector(Target).classList.add("active");
     }
+
+    
  })
