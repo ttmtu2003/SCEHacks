@@ -335,6 +335,18 @@ header input:checked ~ .menu-item {
   padding: 20px 0;
 }
 
+.gov-item-img > img {
+  border-radius: 10px;
+  display: table-cell;
+  max-height: 500px;
+  max-width: 500px;
+}
+
+.gov-item-img {
+  position: relative;
+  padding: 0px 30px 0px 0px;
+}
+
 .actionsYouTake {
   background-color: #74a3ac;
   background-size: cover;
