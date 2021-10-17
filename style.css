@@ -381,9 +381,10 @@ header input:checked ~ .menu-item {
 
 .org-item-img > img {
   border-radius: 10px;
-  display: table-cell;
-  max-height: 500px;
-  max-width: 500px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 
 .org-item-img {
